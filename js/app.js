@@ -8,12 +8,20 @@ const STANDARDS_LIBRARY = [
         desc: "The primary standard in the US market for the construction of industrial control panels."
     },
     {
-        id: "IEC60204-1",
-        name: "IEC 60204-1",
-        title: "Safety of machinery - Electrical equipment of machines",
-        regions: ["Europe (EN 60204-1)", "Asia (Partial)", "South America", "Middle East", "Africa"],
-        url: "https://webstore.iec.ch/publication/60756",
-        desc: "The comprehensive international standard for electrical equipment of machines, widely adopted globally."
+        id: "UL1053",
+        name: "UL 1053",
+        title: "Standard for Ground-Fault Sensing and Relaying Equipment",
+        regions: ["North America"],
+        url: "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL1053",
+        desc: "Covers ground-fault sensing and relaying equipment for protection of circuits, equipment, and people against fault currents."
+    },
+    {
+        id: "NFPA70",
+        name: "NFPA 70",
+        title: "National Electrical Code (NEC)",
+        regions: ["North America", "South America (Partial)"],
+        url: "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70",
+        desc: "The foundational standard for safe installation of electrical wiring and equipment in the United States."
     },
     {
         id: "NFPA79",
@@ -24,12 +32,52 @@ const STANDARDS_LIBRARY = [
         desc: "Provides safeguards for industrial machinery to protect operators, equipment, and facilities in the US."
     },
     {
+        id: "CSAC22.1",
+        name: "CSA C22.1",
+        title: "Canadian Electrical Code (CEC) Part I",
+        regions: ["North America (Canada)"],
+        url: "https://www.csagroup.org/store/product/CSA%20C22.1:21/",
+        desc: "Safety standard for electrical installations in Canada, broadly comparable to the US NEC."
+    },
+    {
+        id: "CSAC22.3",
+        name: "CSA C22.3",
+        title: "Overhead and Underground Systems",
+        regions: ["North America (Canada)"],
+        url: "https://www.csagroup.org/store/product/CSA%20C22.3%20NO.%201:15/",
+        desc: "Standardizes general requirements for electrical overhead and underground distribution systems."
+    },
+    {
+        id: "IEC60204-1",
+        name: "IEC 60204-1",
+        title: "Safety of machinery - Electrical equipment of machines",
+        regions: ["Europe (EN 60204-1)", "Asia", "South America", "Middle East", "Africa"],
+        url: "https://webstore.iec.ch/publication/60756",
+        desc: "The comprehensive international standard for electrical equipment of machines, widely adopted globally."
+    },
+    {
+        id: "IEC61439",
+        name: "IEC 61439 Series",
+        title: "Low-voltage switchgear and controlgear assemblies",
+        regions: ["Europe", "Asia", "South America"],
+        url: "https://webstore.iec.ch/publication/60166",
+        desc: "Defines the specific requirements for low-voltage switchgear and controlgear assemblies."
+    },
+    {
         id: "GB5226.1",
         name: "GB 5226.1",
         title: "Electrical equipment of machines - Part 1: General requirements",
         regions: ["Asia (China)"],
-        url: "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=010377462CEE1EE6514CEAD6F35DF5F5",
+        url: "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo",
         desc: "The Chinese national standard heavily harmonized with IEC 60204-1."
+    },
+    {
+        id: "GBT15706",
+        name: "GB/T 15706",
+        title: "Safety of machinery - General principles for design",
+        regions: ["Asia (China)"],
+        url: "https://openstd.samr.gov.cn/bzgk/gb/newGbInfo",
+        desc: "Basic terminology and methodology for risk assessment and risk reduction for machinery."
     },
     {
         id: "AS60204.1",
