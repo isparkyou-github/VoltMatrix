@@ -138,17 +138,45 @@ const MATRIX_DB = {
     ],
     "E-Stop": [
         {
-            standard: "NFPA 79",
-            region: "North America",
-            clause: "Section 9.2.5.3",
-            text: "Emergency stop circuits shall be hardwired and shall not strictly rely on electronic logic or software.",
+            standard: "IEC 60204-1",
+            region: "Europe / International",
+            clause: "Section 9.2.5.4",
+            text: "Emergency stop functions must conform to Stop Category 0 or 1. It must override all other functions and operations in all modes. Contacts must have positive opening operation.",
             type: "critical"
         },
         {
-            standard: "IEC 60204-1",
-            region: "Europe",
-            clause: "Section 9.2.3",
-            text: "Emergency stop functions must conform to category 0 or 1. Category 0 requires immediate removal of power to actuators.",
+            standard: "NFPA 79",
+            region: "North America (US)",
+            clause: "Section 9.2.5.3",
+            text: "Emergency stop circuits shall be hardwired and generally shall not rely on electronic logic (like standard PLCs) or software, except for certified safety-rated hardware/software systems.",
+            type: "critical"
+        },
+        {
+            standard: "GB 5226.1",
+            region: "Asia (China)",
+            clause: "Section 9.2.5.4.2",
+            text: "急停功能必须设计为0类停止或1类停止。急停按钮必须为红色，底座为黄色。一旦触发必须通过机械闭锁实现自锁。",
+            type: "critical"
+        },
+        {
+            standard: "UL 508A",
+            region: "North America",
+            clause: "Section 66.2",
+            text: "Control circuits for emergency stop must not be routed through standard programmable logic controllers without specific safety evaluations. Must be connected directly to the stopping actuators.",
+            type: "critical"
+        },
+        {
+            standard: "CSA C22.2 No. 286",
+            region: "North America (Canada)",
+            clause: "Section 6.4",
+            text: "Similar to US standards; E-Stop push buttons must be mushroom-head types, red color with yellow background, and remain in the latched position until manual reset.",
+            type: "info"
+        },
+        {
+            standard: "AS 60204.1",
+            region: "Australia/New Zealand",
+            clause: "Section 9.2.5",
+            text: "Directly mirrors the IEC standard. The emergency stop shall function as a Category 0 stop. Resetting the command must not initiate a restart of the machine.",
             type: "critical"
         }
     ]
